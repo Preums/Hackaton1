@@ -8,51 +8,75 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-  <p>index1</p>
-	<br>
-	<a href="/">index1</a>
-	<br>
-	<a href="/index2">index2</a>
-	<br>
-	<a href="/index3">index3</a>
+	<nav>
+		<ul style="display: flex;">
+			<li>
+				<a href="/">index1</a>
+			</li>
+			<li>
+				<a href="/index2">index2</a>
+			</li>
+			<li>
+				<a href="/index3">index3</a>
+			</li>
+		</ul>
+	</nav>
+	<section id="Welcome">
+		<div class="container text-center">
+			<header>
+				<h1>Super fight</h1>
+				<h2>Welcome Heroes</h2>
+			</header>
+			<div class="block--white">
+				<p>Es tu prêt à en découdre?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin nisi tellus, vitae sagittis justo vestibulum eget. Nulla pellentesque ante vitae ipsum congue, eu semper nisl sagittis. Integer porta suscipit purus id volutpat. Sed non erat sed enim aliquet aliquam. Donec eu neque est. Fusce vel est vitae sem posuere rutrum. Vestibulum consequat dui mi, accumsan euismod orci consequat vitae.</p>
+			</div>
+			<a href="#Fight" title="Start">Start</a>
+		</div>
+	</section>
 
-	<div class="jumbotron">
-		<h1>Super fight</h1>
-		<h2>Welcome Heroes</h2>
-	</div>
-	<div class="container">
-		<p>
-			Es tu prêt à en découdre?
-		</p>
-	</div>
+	<section id="Fight">
+		<div class="container">
+			<div id="Choose_arena">
+				<header class="text-center">
+					<h2>Choose your arena&nbsp;:</h2>
+				</header>
+				<div class="row" id="arena_select">
+					<div class="col-6 col-sm-3">
+						<img src="img/backgrounds/background_01.png" alt="background view" class="img-fluid">
+					</div>
+					<div class="col-6 col-sm-3">
+						<img src="img/backgrounds/background_02.png" alt="background view" class="img-fluid">
+					</div>
+					<div class="col-6 col-sm-3">
+						<img src="img/backgrounds/background_03.png" alt="background view" class="img-fluid">
+					</div>
+					<div class="col-6 col-sm-3">
+						<img src="img/backgrounds/background_04.png" alt="background view" class="img-fluid">
+					</div>
+				</div>
+			</div>
+			<div id="Choose_fighter">
+				<header class="text-center">
+					<h2>Choose your fighter&nbsp;:</h2>
+				</header>
+				<div class="row">
 
-	<div class="container">
-		<div class="row" id="arena_select">
-			<div class="col-6 col-sm-3">
-				<img src="img/backgrounds/background_01.png" alt="background view" class="img-fluid">
-			</div>
-			<div class="col-6 col-sm-3">
-				<img src="img/backgrounds/background_02.png" alt="background view" class="img-fluid">
-			</div>
-			<div class="col-6 col-sm-3">
-				<img src="img/backgrounds/background_03.png" alt="background view" class="img-fluid">
-			</div>
-			<div class="col-6 col-sm-3">
-				<img src="img/backgrounds/background_04.png" alt="background view" class="img-fluid">
+				<!-- liste des personnages ici -->
+
+				</div>
 			</div>
 		</div>
+	</section>
+  
 
-		<div class="row" id="character_select">
-			<div class="col-12 col-sm-6">
-				Select your fighter player1
-			</div>
-			<div class="col-12 col-sm-6">
-				Select your fighter player2
-			</div>
+	<!-- à garder --> 
+	<div class="row" id="character_select">
+		<div class="col-12 col-sm-6">
+			Select your fighter player1
 		</div>
-
-		<div class="arena">
-			
+		<div class="col-12 col-sm-6">
+			Select your fighter player2
 		</div>
 	</div>
 

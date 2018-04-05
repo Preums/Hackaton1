@@ -8,8 +8,12 @@ finish : font-family: 'Nosifer', cursive;
 
 
 /* Typographies */
-h1 {
+h1, h2 {
 	font-family: 'Press Start 2P', cursive;
+}
+h1 {
+	font-size: 5em;
+	text-transform: uppercase;
 }
 
 .Game-over {
@@ -19,4 +23,31 @@ h1 {
 p {
 	font-family: 'Share Tech Mono', monospace;
 	font-size: 1.6em;
+}
+
+
+/* Block */
+section {
+	padding: 5em 0;
+}
+
+.block--white {
+	background-color: white;
+	margin: 5em 0;
+}
+
+/* Section Welcome */
+section#Welcome a[title=Start] {
+	display: block;
+	padding: 2em;
+	background-color: red;
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+	text-transform: uppercase;
+}
+
+
+/* Section Fight */
+section#Fight {
+
 }

@@ -1,15 +1,11 @@
 let express = require('express');
 let app = express();
 let path = require("path");
-var bodyParser = require('body-parser');
-var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 let index = require('./routes/index');
 let about = require('./routes/about');
 let coucou = require('./routes/Coucou');
 let bonjour = require('./routes/Bonjour');
-
-app.use(express.bodyParser());
 
 app.use('/', index);
 app.use('/about', about);

@@ -46,8 +46,15 @@ section#Welcome a[title=Start] {
 	text-transform: uppercase;
 }
 
+/* Section Choose */
+section#Choose #Choose_fighter {
+	display: none;
+}
 
 /* Section Fight */
 section#Fight {
-
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    min-height: 800px;
 }

@@ -1,0 +1,22 @@
+/*
+typographies
+
+titles : font-family: 'Press Start 2P', cursive;
+texts : font-family: 'Share Tech Mono', monospace;;
+finish : font-family: 'Nosifer', cursive;
+*/
+
+
+/* Typographies */
+h1 {
+	font-family: 'Press Start 2P', cursive;
+}
+
+.Game-over {
+	font-family: 'Nosifer', cursive;
+}
+
+p {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 1.6em;
+}

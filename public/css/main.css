@@ -27,7 +27,7 @@ p {
 
 
 /* Block */
-section {
+section:not(#Fight) {
 	padding: 5em 0;
 }
 
@@ -37,7 +37,7 @@ section {
 }
 
 /* Section Welcome */
-section#Welcome a[title=Start] {
+.button {
 	display: block;
 	padding: 2em;
 	background-color: red;
@@ -53,8 +53,31 @@ section#Choose #Choose_fighter {
 
 /* Section Fight */
 section#Fight {
+	position: relative;
 	background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    min-height: 800px;
+    min-height: 600px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+section#Fight img.fighter {
+	position: absolute;
+	bottom: 0
+}
+
+section#Fight img#fighter_01 {
+	left: 0;
+}
+section#Fight img#fighter_02  {
+	left: 90%;
+}
+
+section#Fight #Start-fight {
+	width: 20%;
+	text-align: center;
+	margin: 0 auto;
+	display: none;
 }

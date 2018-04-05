@@ -3,29 +3,51 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-	<h1>Bienvenu sur notre site</h1>
-	<h2>Ceci est la page d'accueil</h2>
-	<br>
-	<a href="/">page home</a>
-	<br>
-	<a href="/about">page about</a>
-	<br>
-	<a href="/coucou">page coucou</a>
-	<br>
-	<a href="/bonjour">page bonjour</a>
-	<br>
-	<a href="/superMiddleware">page superMiddleware</a>
+	<div class="jumbotron">
+		<h1>Super fight</h1>
+		<h2>Welcome Heroes</h2>
+	</div>
+	<div class="container">
+		<p>
+			Es tu prêt à en découdre?
+		</p>
+	</div>
 
-	<form action="/" method="post">
-		<label for="name">name</label>
-		<input type="text" id="name" name="name">
-		<br>
-		<label for="lastname">lastname</label>
-		<input type="text" id="lastname" name="lastname">
-		<br>
-		<input type="submit">
-	</form>
+	<div class="container">
+		<div class="row">
+			<div class="col-6 col-sm-3">
+				<img src="/public/img/bg_01.png" alt="background view" class="img-fluid">
+			</div>
+			<div class="col-6 col-sm-3">
+				<img src="/public/img/bg_02.png" alt="background view" class="img-fluid"><img src="/public/img/bg_01.png" alt="background view" class="img-fluid">
+			</div>
+			<div class="col-6 col-sm-3">
+				<img src="/public/img/bg_03.png" alt="background view" class="img-fluid">
+			</div>
+			<div class="col-6 col-sm-3">
+				<img src="/public/img/bg_04.png" alt="background view" class="img-fluid">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12 col-sm-6">
+				Select your fighter player1
+			</div>
+			<div class="col-12 col-sm-6">
+				Select your fighter player2
+			</div>
+		</div>
+
+		<div class="arena">
+			
+		</div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

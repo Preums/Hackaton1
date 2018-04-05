@@ -18,6 +18,8 @@
 
 const apply = ()=>{
 	if (selected === 2){
+	document.getElementsByClassName("toggle")[0].style.display = 'none';
+	document.getElementsByClassName("toggle")[1].style.display = 'none';
   	document.getElementById("Choose").style.display = 'none';
 	document.getElementById("Start_fight").style.display = 'block';
   };

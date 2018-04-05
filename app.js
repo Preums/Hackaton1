@@ -11,6 +11,7 @@ app.use('/', index);
 app.use('/index2', index2);
 app.use('/index3', index3);
 
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(3000);

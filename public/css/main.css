@@ -32,8 +32,9 @@ section:not(#Fight) {
 }
 
 .block--white {
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.85); 
 	margin: 5em 0;
+	padding: 2em;
 }
 
 /* Section Welcome */
@@ -46,10 +47,22 @@ section:not(#Fight) {
 	text-transform: uppercase;
 }
 
+section#Welcome {
+	background-image: url("/img/SuperHeros.png");
+	background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.container.text-center header {
+/*	text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.99);*/
+	text-shadow: 5px 5px 5px red, 10px 10px 5px white;
+}
+
 /* Section Choose */
 section#Choose #Choose_fighter {
 	display: none;
 }
+
 
 /* Section Fight */
 section#Fight {

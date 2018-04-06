@@ -118,7 +118,6 @@ class combat {
 		} else if ((player2.durability <= 0) && (player1.durability > 0)) {
 			return `${player1.name} Win !!!`;
 		} else {
-			//console.log(`player1 vaut: ${JSON.stringify(player1,0,2)} et player2 vaut: ${JSON.stringify(player2,0,2)}`)
 			return `Que le combat continue`;
 		}
 	}
@@ -177,13 +176,6 @@ window.addEventListener('load', function() {
 		}
 
 	});
-// setTimeout(function() {
-		// console.log("player1 :", player1.name);
-		// let newFight = new combat(player1,player2);
-		// console.log(getRound(player1,player2,1,1));
-		// console.log(getWinner(player1,player2));
-		
-// 	 }, 5000)
 
 })
 
@@ -198,57 +190,49 @@ const apply = ()=>{
 };
 
 
+let P1Atck = 2;
+let P2Atck = 3;
+
+document.getElementById("padPlayer1_fist").addEventListener('click', function(){
+	P1Atck = 1;
+	console.log(P1Atck);
+});
+
+document.getElementById("padPlayer1_kick").addEventListener('click', function(){
+	P1Atck = 2;
+	console.log(P1Atck);
+});
+
+document.getElementById("padPlayer1_dodge").addEventListener('click', function(){
+	P1Atck = 3;
+	console.log(P1Atck);
+});
+
+document.getElementById("padPlayer2_fist").addEventListener('click', function(){
+	P2Atck = 1;
+	console.log(P2Atck);
+});
+
+document.getElementById("padPlayer2_kick").addEventListener('click', function(){
+	P2Atck = 2;
+	console.log(P2Atck);
+});
+
+document.getElementById("padPlayer2_dodge").addEventListener('click', function(){
+	P2Atck = 3;
+	console.log(P2Atck);
+});
 
 button_fight_start.addEventListener("click", function() {
 		let newFight = new combat(player1,player2);
 
 		let roundResult = document.createElement('p');
 
-		let att1 = Math.ceil(Math.random()*3);
-		let att2 = Math.ceil(Math.random()*3);
-		
-		roundResult.textContent=newFight.getRound(player1,player2,att1,att2);
+		roundResult.textContent=newFight.getRound(player1,player2,P1Atck,P2Atck);
+
 		roundResult.style.backgroundColor='white';
 
 		document.getElementById('fight_btn').appendChild(roundResult);
 		document.getElementById("Start_fight").textContent = newFight.getWinner(player1,player2);
 })
 
-
-
-// class player {
-// 	constructor (name, speed, power, strength, intelligence,durability) {
-// 		this.name = name;
-// 		this.speed = speed;
-// 		this.power = power;
-// 		this.strength = strength;
-// 		this.power = power;
-// 		this.intelligence = intelligence;
-// 		this.durability = durability;
-// 		}
-// }
-
-
-// function createPlayer1() {
-// 	fetch(`https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/5.json`)
-// 		.then(res => res.json())
-// 		.then(resJson => {
-// 			player1 = new player(resJson.name, resJson.powerstats.power, resJson.powerstats.speed, resJson.powerstats.strength, resJson.powerstats.intelligence, resJson.powerstats.durability);
-// 		});
-// 	}
-
-// function createPlayer2() {
-// 	fetch(`https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/45.json`)
-// 		.then(res => res.json())
-// 		.then(resJson => {
-// 			player2 = new player(resJson.name, resJson.powerstats.power, resJson.powerstats.speed, resJson.powerstats.strength, resJson.powerstats.intelligence, resJson.powerstats.durability);
-// 	});
-// }
-
-// createPlayer1()
-// createPlayer2()
-
-// setTimeout(function() {
-// 	console.log("war1 : ", player1);""
-//  	console.log("war2 : ", player2);
-//  }, 5000)

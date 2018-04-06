@@ -20,7 +20,6 @@ window.addEventListener('load', function() {
 			rand = Math.round(Math.random()*myJson.length);
 			var1 = myJson[rand];
 			fightersP1[i].src=var1.images.xs;
-			console.log(var1.images.xs);
 			fightersP1[i].addEventListener("click", function(event) {
 				event.preventDefault();
 				document.getElementById('fighter_01').src= var1.images.sm;
@@ -34,7 +33,6 @@ window.addEventListener('load', function() {
 			rand = Math.round(Math.random()*myJson.length);
 			var2 = myJson[rand];
 			fightersP2[i].src=var2.images.xs;
-			console.log(var2.images.xs);
 			fightersP2[i].addEventListener("click", function(event) {
 				event.preventDefault();
 				document.getElementById('fighter_02').src= var2.images.sm;
@@ -45,43 +43,6 @@ window.addEventListener('load', function() {
 	});	
 })
 
- // for (let i = 0; i < fightersP1.length; i++) {
- // 	fightersP1[i].addEventListener("click", function( event ) {
-	// event.preventDefault();
-
-	// let url = fightersP1[i].src;
- // 	fetch(`https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/${fighter1Id}.json`)
-	// .then(function(response) {
-	// 	let result = response.json();
-	// 	console.log(result);
-	// 	return result
-	// })
-	// .then(function(myJson) {
-	// 	document.getElementById('fighter_01').src= myJson.images.sm;
-	// 	console.log(myJson);
-	// });	
- // 		selected +=1;
- // 		apply();
- // 	});
- // };
-
- // for (let i = 0; i < fightersP2.length; i++) {
- // 	fightersP2[i].addEventListener("click", function( event ) {
-	// event.preventDefault();
-
-	// let url = fightersP2[i].src;
- // 	fetch(`https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/${fighter2Id}.json`)
-	// .then(function(response) {
-	// 	return response.json();
-	// })
-	// .then(function(myJson) {
-	// 	document.getElementById('fighter_02').src= myJson.images.sm;
-	// 	console.log(myJson);
-	// });	
- // 		selected +=1;
- // 		apply();
- // 	});
- // };
 
 
 const apply = ()=>{

@@ -115,23 +115,71 @@ class combat {
 
 // joueur de test
 
+
 class player {
-	constructor (name, speed, power, strength, intelligence,durability) {
-		this.name = name;
-		this.speed = speed;
-		this.power = power;
-		this.strength = strength;
-		this.power = power;
-		this.intelligence = intelligence;
-		this.durability = durability;
+constructor (name, speed, power, strength, intelligence,durability) {
+	this.name = name;
+	this.speed = speed;
+	this.power = power;
+	this.strength = strength;
+	this.power = power;
+	this.intelligence = intelligence;
+	this.durability = durability;
 	}
 }
 
+let player1;
+let player2;
+// let player3;
+// let player4;
 
-let arthur = new player('arthur', 12,50,45,46,100);
-let lancelot = new player('lancelot', 25,35,63,87,90);
+function createPlayer1() {
+	window.fetch(`https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/5.json`)
+	.then(res => res.json())
+		.then(resJson => {
+		player1 = new player(resJson.name, resJson.powerstats.power, resJson.powerstats.speed, resJson.powerstats.strength, resJson.powerstats.intelligence, resJson.powerstats.durability);
+		});
+	}
 
-let fight = new combat(arthur,lancelot);
+	function createPlayer2() {
+	window.fetch(`https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/45.json`)
+	.then(res => res.json())
+	.then(resJson => {
 
-console.log(fight.getRound(arthur,lancelot,2,2));
-console.log(fight.getWinner(arthur,lancelot));
+		player2 = new player(resJson.name, resJson.powerstats.power, resJson.powerstats.speed, resJson.powerstats.strength, resJson.powerstats.intelligence, resJson.powerstats.durability);
+	});
+}
+
+
+
+// function createPlayer3() {
+// window.fetch(`https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/177.json`)
+// .then(res => res.json())
+// .then(resJson => {
+
+// player3 = new player(resJson.name, resJson.powerstats.power, resJson.powerstats.speed, resJson.powerstats.strength, resJson.powerstats.intelligence, resJson.powerstats.durability);
+// });
+// }
+// function createPlayer4() {
+// window.fetch(`https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/517.json`)
+// .then(res => res.json())
+// .then(resJson => {
+
+// player4 = new player(resJson.name, resJson.powerstats.power, resJson.powerstats.speed, resJson.powerstats.strength, resJson.powerstats.intelligence, resJson.powerstats.durability);
+// });
+//}
+
+createPlayer1()
+createPlayer2()
+// createPlayer3()
+// createPlayer4()
+setTimeout(function() {
+console.log("war1 : ", player1);
+console.log("war2 : ", player2);
+// console.log("war3 : ", player3);
+// console.log("war4 : ", player4);
+console.log("intelligence war1 : ", player4.intelligence);
+console.log("speed war2 : ", player2.speed);
+// console.log("durability war3 : ", player3.durability);
+// console.log("power war4 : ", player4.power);
+}, 2000)

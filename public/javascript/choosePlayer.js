@@ -20,24 +20,24 @@ window.addEventListener('load', function() {
 			rand = Math.round(Math.random()*myJson.length);
 			var1 = myJson[rand];
 			fightersP1[i].src=var1.images.xs;
-			console.log(var1.images.xs);
+			let src = fightersP1[i].src
 			fightersP1[i].addEventListener("click", function(event) {
 				event.preventDefault();
-				document.getElementById('fighter_01').src= var1.images.sm;
+				document.getElementById('fighter_01').src= src;
 				selected +=1;
  				apply();
 			})
-
 		}
+
 
 		for (var i = 0; i < 4; i++) {
 			rand = Math.round(Math.random()*myJson.length);
 			var2 = myJson[rand];
 			fightersP2[i].src=var2.images.xs;
-			console.log(var2.images.xs);
+			let src = fightersP2[i].src
 			fightersP2[i].addEventListener("click", function(event) {
 				event.preventDefault();
-				document.getElementById('fighter_02').src= var2.images.sm;
+				document.getElementById('fighter_02').src=src;
 				selected +=1;
  				apply();
 			})

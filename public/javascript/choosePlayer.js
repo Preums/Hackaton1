@@ -227,7 +227,9 @@ button_fight_start.addEventListener("click", function() {
 		let newFight = new combat(player1,player2);
 
 		let roundResult = document.createElement('p');
+
 		roundResult.textContent=newFight.getRound(player1,player2,P1Atck,P2Atck);
+
 		roundResult.style.backgroundColor='white';
 
 		document.getElementById('fight_btn').appendChild(roundResult);

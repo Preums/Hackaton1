@@ -203,7 +203,11 @@ button_fight_start.addEventListener("click", function() {
 		let newFight = new combat(player1,player2);
 
 		let roundResult = document.createElement('p');
-		roundResult.textContent=newFight.getRound(player1,player2,1,1);
+
+		let att1 = Math.ceil(Math.random()*3);
+		let att2 = Math.ceil(Math.random()*3);
+		
+		roundResult.textContent=newFight.getRound(player1,player2,att1,att2);
 		roundResult.style.backgroundColor='white';
 
 		document.getElementById('fight_btn').appendChild(roundResult);

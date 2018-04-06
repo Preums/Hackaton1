@@ -23,9 +23,10 @@ window.addEventListener('load', function() {
 			rand = Math.round(Math.random()*myJson.length);
 			var1 = myJson[rand];
 			fightersP1[i].src=var1.images.xs;
+      let src = fightersP1[i].src
 			fightersP1[i].addEventListener("click", function(event) {
 				event.preventDefault();
-				document.getElementById('fighter_01').src= var1.images.sm;
+				document.getElementById('fighter_01').src= src;
 				player1 = new player(var1.name, var1.powerstats.power, var1.powerstats.speed, var1.powerstats.strength, var1.powerstats.intelligence, var1.powerstats.durability);
 				selected +=1;
  				apply();
@@ -36,9 +37,10 @@ window.addEventListener('load', function() {
 			rand = Math.round(Math.random()*myJson.length);
 			var2 = myJson[rand];
 			fightersP2[j].src=var2.images.xs;
+      let src = fightersP2[i].src
 			fightersP2[j].addEventListener("click", function(event) {
 				event.preventDefault();
-				document.getElementById('fighter_02').src= var2.images.sm;
+				document.getElementById('fighter_02').src=src;
 				player2 = new player(var2.name, var2.powerstats.power, var2.powerstats.speed, var2.powerstats.strength, var2.powerstats.intelligence, var2.powerstats.durability);
 				selected +=1;
  				apply();

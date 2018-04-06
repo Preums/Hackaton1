@@ -81,3 +81,25 @@ section#Fight #Start_fight {
 	margin: 0 auto;
 	display: none;
 }
+
+
+/*game pad*/
+section#gamePad #gamepadP2 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+section#gamePad{
+	display: none;
+	justify-content: space-between;
+	background-image: url(/img/steel.jpg);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.gamePad-btn{
+	max-width: 20%;
+}
+

@@ -77,19 +77,17 @@ section#Fight {
 }
 
 section#Fight img.fighter {
-	position: absolute;
-	bottom: 0
+	padding; 5px;
 }
 
 section#Fight img#fighter_01 {
-	left: 0;
+	padding-left:10px;
 }
 section#Fight img#fighter_02  {
-	left: 90%;
+	padding-right:10px;
 }
 
 section#Fight #Start_fight {
-	width: 20%;
 	text-align: center;
 	margin: 0 auto;
 	display: none;

@@ -69,7 +69,7 @@ class combat {
 			if (Math.random()*this.dodgeP1 < Math.random()*this.kickP2) {
 				let degatP1 = Math.random()*this.kickP2;
 				player1.durability -= degatP1;
-				return `le pied ${player2.name} s'applatie sur le visage de ${player1.name} qui lamentablement d'esquiver`;
+				return `le pied ${player2.name} s'applatie sur le visage de ${player1.name} qui tentait lamentablement d'esquiver`;
 			} else {
 				let degatP2 = Math.random()*this.dodgeP1;
 				player2.durability -= degatP2;
@@ -80,7 +80,7 @@ class combat {
 			if (Math.random()*this.dodgeP2 < Math.random()*this.kickP1) {
 				let degatP2 = Math.random()*this.kickP1;
 				player2.durability -= degatP2;
-				return `le pied ${player1.name} s'applatie sur le visage de ${player2.name} qui lamentablement d'esquiver`;;
+				return `le pied ${player1.name} s'applatie sur le visage de ${player2.name} qui tentait lamentablement d'esquiver`;;
 			} else {
 				let degatP1 = Math.random()*this.dodgeP2;
 				player1.durability -= degatP1;
@@ -150,11 +150,11 @@ window.addEventListener('load', function() {
 		for (var i = 0; i < 4; i++) {
 			rand = Math.round(Math.random()*myJson.length);
 			var1 = myJson[rand];
-			fightersP1[i].src = var1.images.xs;
+			fightersP1[i].src = var1.images.md;
       		let src = myJson[rand];
 			fightersP1[i].addEventListener("click", function(event) {
 				event.preventDefault();
-				document.getElementById('fighter_01').src= src.images.sm;
+				document.getElementById('fighter_01').src= src.images.lg;
 				player1 = new player(src.name, src.powerstats.power, src.powerstats.speed, src.powerstats.strength, src.powerstats.intelligence, src.powerstats.durability);
 				selected +=1;
  				apply();
@@ -164,11 +164,11 @@ window.addEventListener('load', function() {
 		for (var j = 0; j < 4; j++) {
 			rand = Math.round(Math.random()*myJson.length);
 			var2 = myJson[rand];
-			fightersP2[j].src = var2.images.xs;
+			fightersP2[j].src = var2.images.md;
       		let src = myJson[rand];
 			fightersP2[j].addEventListener("click", function(event) {
 				event.preventDefault();
-				document.getElementById('fighter_02').src=src.images.sm;
+				document.getElementById('fighter_02').src=src.images.lg;
 				player2 = new player(src.name, src.powerstats.power, src.powerstats.speed, src.powerstats.strength, src.powerstats.intelligence, src.powerstats.durability);
 				selected +=1;
  				apply();

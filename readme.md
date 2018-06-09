@@ -5,7 +5,7 @@ The goal is to create a simple super hero fight game
 ### Objectives
 * Fetch an api providing the charachters list
 * load available charachters from this api
-* create a fight game between to heros
+* create a fight game between two heroes
 
 My main contribution is the fight system
 
